@@ -43,11 +43,11 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        ImageView preventionImageView=findViewById(R.id.coronavirusImageView);
+        ImageView preventionImageView=findViewById(R.id.preventionImageView);
         preventionImageView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent=new Intent(getApplicationContext(),CoronaVirus.class);
+                Intent intent=new Intent(getApplicationContext(),Prevention.class);
                 startActivity(intent);
             }
         });
@@ -66,6 +66,15 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent=new Intent(getApplicationContext(),About.class);
+                startActivity(intent);
+            }
+        });
+
+        ImageView statsQuickImageView=findViewById(R.id.statsQuickImageView);
+        statsQuickImageView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent=new Intent(getApplicationContext(),Statistics.class);
                 startActivity(intent);
             }
         });

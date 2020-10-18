@@ -10,6 +10,6 @@ public class Prevention extends Activity {
         setContentView(R.layout.activity_prevention);
         WebView webView=new WebView(this);
         setContentView(webView);
-        webView.loadUrl("https://www.hopkinsmedicine.org/health/conditions-and-diseases/coronavirus");
+        webView.loadUrl("https://www.cdc.gov/coronavirus/2019-ncov/prevent-getting-sick/prevention.html");
     }
 }
